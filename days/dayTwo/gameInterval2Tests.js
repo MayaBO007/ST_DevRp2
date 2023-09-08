@@ -39,7 +39,6 @@ async function startInterval2Tests() {
             function carMove() {
                 let choseCar = randColor();
                 let carSpeed = randSpeedCar();
-                document.getElementById("break").style.display = "none";
                 document.getElementById("redButton").style.display = "inline";
                 document.getElementById("blueButton").style.display = "inline";
                 document.getElementById("gameScreen").style.display = "inline";
