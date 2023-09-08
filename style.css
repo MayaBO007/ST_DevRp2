@@ -850,7 +850,7 @@
 
 } */
 
-#secCountdown {
+/* #secCountdown {
 
     position: absolute;
     left: 17%;
@@ -861,7 +861,7 @@
     color: none;
     background-color: transparent;
     display: none;
-}
+} */
 
 
 #TenSecTimeout {
