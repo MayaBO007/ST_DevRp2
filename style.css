@@ -24,7 +24,7 @@
 
 }
 
-#startDevtestButton {
+/* #startDevtestButton {
     position: absolute;
     left: 27.5%;
     top: 20%;
@@ -34,7 +34,7 @@
     color: none;
     background-color: transparent;
     display: none;
-}
+} */
 
 #moneyCar {
     position: absolute;
@@ -723,7 +723,7 @@
 
 } */
 
-#startAfterSwitchTestButton {
+/* #startAfterSwitchTestButton {
     position: absolute;
     left: 27.5%;
     top: 20%;
@@ -734,7 +734,7 @@
     background-color: transparent;
     display: none;
 
-}
+} */
 
 /* #startAfterSwitchTestButton:active {
     transform: translateY(4px);
