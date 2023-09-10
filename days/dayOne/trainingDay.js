@@ -151,31 +151,23 @@ async function trainingDay() {
                     clearTimeout(sessionTimerTrainingDay);
                     clearInterval(sessionIntervalTrainingDay);
                     function savingTraining() {
-                        saveTraining = new Promise((resolve, reject) => {
-                            let saved = platform.saveSession(responsesTrainingData, false)
-                            if (saved == resolve) {
-                                resolve("done");
+                        platform.saveSession(responsesTrainingData, false).then(() => {
+                            reset_airplane();
+                            document.getElementById("blueButton").style.display = "none";
+                            document.getElementById("redButton").style.display = "none";
+                            resolve("done")
+                        }).catch(() => {
+                            if (saveAttemptTraining >= 200) {
+                                document.getElementById("problem").style.display = "inline";
                             } else {
-                                reject("")
+                                saveAttemptTraining++;
+                                savingTraining()
                             }
-                            saveTraining.then((message) => {
-                                reset_airplane();
-                                document.getElementById("blueButton").style.display = "none";
-                                document.getElementById("redButton").style.display = "none";
-                                resolve(message)
-                            }).catch(() => {
-                                if (saveAttemptTraining >= 200) {
-                                    document.getElementById("problem").style.display = "inline";
-                                } else {
-                                    saveAttemptTraining++;
-                                    savingTraining()
-                                }
-                            })
                         })
                     }
                     savingTraining()
                     // }, 300000);
-                }, 3000);
+                }, 10000);
             }
             studySessionData.doneDay1 = "startDayOne";
             platform.saveSession(studySessionData, true).then(() => {
