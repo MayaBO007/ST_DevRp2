@@ -155,9 +155,9 @@ async function trainingDay() {
                             reset_airplane();
                             document.getElementById("blueButton").style.display = "none";
                             document.getElementById("redButton").style.display = "none";
-                            resolve("done")
+                            resolve("done");
                         }).catch(() => {
-                            if (saveAttemptTraining >= 200) {
+                            if (saveAttemptTraining >= 2000) {
                                 document.getElementById("problem").style.display = "inline";
                             } else {
                                 saveAttemptTraining++;
