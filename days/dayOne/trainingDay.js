@@ -174,8 +174,8 @@ async function trainingDay() {
                         })
                     }
                     savingTraining()
-                }, 300000);
-                // }, 3000);
+                    // }, 300000);
+                }, 3000);
             }
             studySessionData.doneDay1 = "startDayOne";
             platform.saveSession(studySessionData, true).then(() => {
