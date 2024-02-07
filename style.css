@@ -95,6 +95,7 @@
     background-color: transparent;
     display: none;
     user-select: none;
+    -webkit-user-select: none;
 }
 
 #redButton:active {
@@ -115,6 +116,7 @@
     background-color: transparent;
     display: none;
     user-select: none;
+    -webkit-user-select: none;
 }
 
 #blueButton:active {
