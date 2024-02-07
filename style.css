@@ -94,6 +94,7 @@
     color: none;
     background-color: transparent;
     display: none;
+    user-select: none;
 }
 
 #redButton:active {
@@ -113,6 +114,7 @@
     color: none;
     background-color: transparent;
     display: none;
+    user-select: none;
 }
 
 #blueButton:active {
